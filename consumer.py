@@ -62,11 +62,13 @@ def pre_process_tweet(tweet):
 
     return(tweet)
 
-total_sentences = ""
-twitter_mask = np.array(Image.open("twitter.jpeg"))
-for i in range(50):
+# total_sentences = ""
+# twitter_mask = np.array(Image.open("twitter.jpeg"))
+
+while True:
         tweet = json.loads(next(iter(consumer)).value)
-        print(tweet)
+
+        print(type(tweet))
         print("\n\n")
 
 
