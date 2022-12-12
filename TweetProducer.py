@@ -69,7 +69,7 @@ def tweeting():
                                                  "referenced_tweets.id",
                                                  "referenced_tweets.id.author_id"
                                              ],
-                                             max_results=11,
+                                             max_results=100,
                                              start_time=start_time,
                                              end_time=end_time
                                              )
@@ -121,3 +121,5 @@ def tweeting():
         #     # print(dico_dico)
         print('Pause de 10 secondes!')
         time.sleep(10)
+
+tweeting()
